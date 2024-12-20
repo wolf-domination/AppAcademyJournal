@@ -1,76 +1,151 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <title>Comprehensive HTML5 Tag Example</title>
     <meta charset="UTF-8">
+    <meta name="description" content="An example demonstrating all HTML5 tags.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Document Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        section { border: 1px solid #ccc; margin: 10px 0; padding: 10px; }
+    </style>
 </head>
+<body>
+    <!-- Document Structure Tags -->
+    <header>
+        <h1>HTML5 Comprehensive Tag Example</h1>
+        <nav>
+            <ul>
+                <li><a href="#main-content">Main Content</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#forms">Forms</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<body bgcolor="lightblue" text="black" link="blue" vlink="purple" alink="red">
+    <main id="main-content">
+        <section>
+            <article>
+                <h2>Article Example</h2>
+                <p>This is an <mark>example article</mark> with a <time datetime="2024-12-18">specific time</time>.</p>
+                <aside>
+                    <p>This is an <strong>aside</strong> related to the article content.</p>
+                </aside>
+            </article>
+        </section>
 
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
+        <section>
+            <h2>Text Semantics</h2>
+            <p><abbr title="Hypertext Markup Language">HTML</abbr> is a markup language for creating web pages.</p>
+            <p>This text includes <b>bold</b>, <i>italic</i>, <u>underline</u>, and <s>strikethrough</s>.</p>
+            <p>This is a <q>short quote</q> inline. Here's a blockquote:</p>
+            <blockquote cite="https://example.com">
+                "This is a longer quote, with a citation for reference."
+            </blockquote>
+            <address>
+                Contact us at <a href="mailto:support@example.com">support@example.com</a>.
+            </address>
+        </section>
 
-    <p>This is a <strong>bold</strong> paragraph and <em>italicized</em> text.</p>
-    <pre>
-        Preformatted text block
-        with line breaks
-    </pre>
-    <blockquote>
-        This is a blockquote, typically used for quoting text.
-    </blockquote>
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            <p>Image:</p>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
 
-    <p><a href="https://www.example.com">This is a link to an external website</a></p>
-    <p><a href="mailto:someone@example.com">Click here to send an email</a></p>
+            <p>Audio:</p>
+            <audio controls>
+                <source src="example.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
 
-    <ul>
-        <li>Unordered list item 1</li>
-        <li>Unordered list item 2</li>
-        <li>Unordered list item 3</li>
-    </ul>
+            <p>Video:</p>
+            <video controls width="320">
+                <source src="example.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
 
-    <ol start="1">
-        <li>Ordered list item 1</li>
-        <li>Ordered list item 2</li>
-        <li>Ordered list item 3</li>
-    </ol>
+            <p>Canvas:</p>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+                Your browser does not support the canvas element.
+            </canvas>
 
-    <dl>
-        <dt>Definition Term 1</dt>
-        <dd>Definition 1</dd>
-        <dt>Definition Term 2</dt>
-        <dd>Definition 2</dd>
-    </dl>
+            <p>SVG:</p>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+        </section>
 
-    <hr size="2" width="50%" noshade>
+        <section id="forms">
+            <h2>Forms</h2>
+            <form action="/submit" method="post">
+                <label for="text-input">Text Input:</label>
+                <input type="text" id="text-input" name="text-input"><br><br>
 
-    <img src="image.jpg" alt="Description of Image" width="300" height="200" />
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
 
-    <form action="/submit" method="post">
-        <input type="text" name="username" size="20" placeholder="Enter your name" />
-        <input type="submit" value="Submit" />
-    </form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
 
-    <table border="1" cellspacing="5" cellpadding="5" width="50%">
-        <tr>
-            <th>Table Header 1</th>
-            <th>Table Header 2</th>
-        </tr>
-        <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-        </tr>
-        <tr>
-            <td>Data 3</td>
-            <td>Data 4</td>
-        </tr>
-    </table>
+                <label for="color">Color Picker:</label>
+                <input type="color" id="color" name="color"><br><br>
 
+                <label for="date">Date Picker:</label>
+                <input type="date" id="date" name="date"><br><br>
+
+                <label for="range">Range:</label>
+                <input type="range" id="range" name="range" min="0" max="100"><br><br>
+
+                <label>Checkboxes:</label>
+                <input type="checkbox" id="checkbox1" name="checkbox1" value="Option 1">
+                <label for="checkbox1">Option 1</label><br>
+                <input type="checkbox" id="checkbox2" name="checkbox2" value="Option 2">
+                <label for="checkbox2">Option 2</label><br><br>
+
+                <label>Radio Buttons:</label>
+                <input type="radio" id="radio1" name="radio" value="A">
+                <label for="radio1">A</label><br>
+                <input type="radio" id="radio2" name="radio" value="B">
+                <label for="radio2">B</label><br><br>
+
+                <label for="select">Select:</label>
+                <select id="select" name="select">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select><br><br>
+
+                <label for="textarea">Textarea:</label>
+                <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Other Tags</h2>
+            <details>
+                <summary>Click to expand</summary>
+                <p>This is a hidden section revealed on click.</p>
+            </details>
+            <progress value="70" max="100"></progress>
+            <meter value="0.6">60%</meter>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Example Company</p>
+    </footer>
+
+    <script>
+        // Example script to draw on canvas
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(20, 20, 150, 75);
+    </script>
 </body>
-
 </html>
